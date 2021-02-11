@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main {
+	background: -webkit-linear-gradient(rgb(255, 174, 0), rgb(172, 0, 0));
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*NAVBAR*/
+
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #4d1605db;
+}
+
+.logo {
+    background: -webkit-linear-gradient(rgb(255, 174, 0), rgb(172, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    transition: 0.5s;
+    background-color: rgb(208, 128, 44);
+}
+
+.nav-links a:active {
+    background-color: rgb(208, 44, 44);
+}
+
+/*NAVBAR END*/
+
+/* MAIN */
+.auto-slider{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 10px 10px 20px;
+    background: -webkit-linear-gradient(rgba(59, 41, 2, 0.603), rgba(73, 2, 2, 0.623));
+    max-width: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+ 
+}
+
+.auto-slider h1 {
+    padding-bottom: 10px;
+    font-size: 2rem;
+    color: #cf7f07;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div#slider{
+    overflow: hidden; 
+}
+
+div#slider figure img{ 
+    width: 20%; 
+    float: left; 
+}
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s sliding ease infinite; 
+}
+
+@keyframes sliding{
+    0%{left: 0%; }
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+    100%{left: 0%;}
+}        
+
+/* MAIN END */
+
+/* FOOTER */
+footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #351301;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    padding: 0.5em;
+    font-size: 1.2rem;
+}
+
+footer p {
+    padding: 0;
+    font-size: 0.8em;
+    color: hsla(0, 50%, 100%, 0.35);
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+footer li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+/* FOOTER END*/

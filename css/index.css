@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*NAVBAR*/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #4d1605db;
+}
+
+.logo {
+    background: -webkit-linear-gradient(rgb(255, 174, 0), rgb(172, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    transition: 0.5s;
+    background-color: rgb(208, 128, 44);
+}
+
+.nav-links a:active {
+    background-color: rgb(208, 44, 44);
+}
+
+/*NAVBAR END*/
+
+/* MAIN */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/homedog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-section {
+    padding-top: 225px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#main-section h1 {
+    font-size: 5rem;
+    color: #570000;
+}
+
+#main-section p {
+    font-size: 1.7rem;
+    color: white;
+}
+
+#main-section a {
+    text-decoration: none;
+}
+
+.aboutusButton {
+    display: inline-block;
+    padding: 5px 15px;
+    color: rgb(68, 0, 0);
+    background-color: rgba(243, 138, 0, 0.741);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin-top: 25px;
+    transition: 1s;
+    border-radius: 50px;
+}
+
+.aboutusButton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(51, 0, 0, 0.555);
+}
+
+/* MAIN END */
+
+/* FOOTER */
+footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #351301;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    padding: 0.5em;
+    font-size: 1.2rem;
+}
+
+footer p {
+    padding: 0;
+    font-size: 0.8em;
+    color: hsla(0, 50%, 100%, 0.35);
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+footer li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+/* FOOTER END*/
