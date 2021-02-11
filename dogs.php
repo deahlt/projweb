@@ -54,11 +54,8 @@
             <li><a href="https://twitter.com"><img src="https://img.icons8.com/fluent/48/ffffff/twitter.png"
                         alt="Twitter" /></a>
             </li>
-
         </ul>
         <!--FOOTER END-->
     </footer>
-
 </body>
-
 </html>
