@@ -19,6 +19,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="aboutus.php">Për ne</a></li>
                 <li><a href="contactus.php">Kontakti</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="login.php">Kyçu | Regjistrohu</a></li>
             </ul>
         </nav>
