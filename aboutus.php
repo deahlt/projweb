@@ -16,10 +16,10 @@
                 <h4>Petlove</h4>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">Për ne</a></li>
-                <li><a href="contactus.html">Kontakti</a></li>
-                <li><a href="login.html">Kyçu | Regjistrohu</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutus.php">Për ne</a></li>
+                <li><a href="contactus.php">Kontakti</a></li>
+                <li><a href="login.php">Kyçu | Regjistrohu</a></li>
             </ul>
         </nav>
         <!--NAVBAR END-->
