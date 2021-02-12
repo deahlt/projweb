@@ -1,6 +1,7 @@
 <?php 
     include 'header.php';
 ?>
+<link rel="stylesheet" href="css/dogs.css">
 
 <main>
     <!--SLIDER-->

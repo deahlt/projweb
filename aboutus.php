@@ -1,6 +1,7 @@
 <?php 
     include 'header.php';
 ?>
+<link rel="stylesheet" href="css/aboutus.css">
 
 <main>
     <!--MAIN TEXT-->

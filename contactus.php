@@ -1,6 +1,7 @@
 <?php 
     include 'header.php';
 ?>
+<link rel="stylesheet" href="css/contactus.css">
 
 <div class="contact-form">
   <h1>Kontakti</h1>

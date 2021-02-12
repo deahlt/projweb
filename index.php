@@ -1,6 +1,8 @@
 <?php 
     include 'header.php';
 ?>
+<link rel="stylesheet" href="css/index.css">
+
 <main>
     <!--MAIN TEXT-->
     <div id="main-section">
