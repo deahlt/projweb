@@ -1,5 +1,7 @@
-<?php 
-    include 'header.php';
+<?php
+session_start();
+ob_start();
+include 'header.php';
 ?>
 <link rel="stylesheet" href="css/contactus.css">
 
@@ -30,6 +32,6 @@
 
 <script src="js/contactus.js"></script>
 
-<?php 
-    include 'footer.php';
+<?php
+include 'footer.php';
 ?>

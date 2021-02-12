@@ -1,5 +1,7 @@
-<?php 
-    include 'header.php';
+<?php
+session_start();
+ob_start();
+include 'header.php';
 ?>
 <link rel="stylesheet" href="css/login.css">
 
@@ -16,16 +18,15 @@
 			<!--FORM BOX-->
 			<div class="formBox">
 				<!--SIGN IN-->
-				<form id="form1" method="post">
+				<form id="form1" method="post" action="./includes/login_process.php">
 					<h2>Kyçu</h2>
 					<label style="color: rgb(242, 210, 141)"><b>Emri i përdoruesit:</b></label>
-					<input id="username-si" type="text" name="Username" placeholder="Shkruani username tuaj" required />
-					<p id="warning-name-error">Username është gabim.</p>
+					<input id="username-si" type="email" name="Email" placeholder="Shkruani email tuaj" required />
+					<p id="warning-name-error">Shkruani një email valid.</p>
 					<label style="color: rgb(242, 210, 141)"><b>Fjalëkalimi:</b></label>
-					<input id="password-si" type="password" name="Password" placeholder="Shkruani fjalëkalimin tuaj"
-						required />
+					<input id="password-si" type="password" name="Password" placeholder="Shkruani fjalëkalimin tuaj" required />
 					<p id="warning-error">Fjalëkalimi është gabim.</p>
-					<input id="submit-si" type="button" name="Submit" value="Kyçu" />
+					<input id="submit-si" type="submit" name="login_user" value="Kyçu" />
 
 					<p class="signupQuestion">
 						Nuk keni llogari?
@@ -41,7 +42,7 @@
 			<!--FORM BOX-->
 			<div class="formBox">
 				<!--SIGN UP-->
-				<form id="form2" action = "./includes/registration_process.php" method=POST>
+				<form id="form2" action="./includes/registration_process.php" method=POST>
 					<h2>Regjistrohuni</h2>
 					<label style="color: rgb(242, 210, 141)"><b>Emri i përdoruesit:</b></label>
 					<input id="username-su" type="text" name="Username" placeholder="Krijoni një username" required />
@@ -53,15 +54,13 @@
 					<input id="email-su" type="email" name="Email" placeholder="Shkruani emailin tuaj" required />
 					<p id="warning-email">Shkruani një email valid.</p>
 					<label style="color: rgb(242, 210, 141)"><b>Fjalëkalimi:</b></label>
-					<input id="password-su" type="password" name="Password" placeholder="Krijoni një fjalëkalim"
-						required />
+					<input id="password-su" type="password" name="Password" placeholder="Krijoni një fjalëkalim" required />
 					<p id="warning-length">Fjalëkalimi është shumë i shkurtë.</p>
 					<p id="warning-confirm">
 						Fjalëkalimet nuk përputhen.
 					</p>
 					<label style="color: rgb(242, 210, 141)"><b>Konfirmo fjalëkalimin:</b></label>
-					<input id="password2-su" type="password" name="Password" placeholder="Konfirmo fjalëkalimin"
-						required />
+					<input id="password2-su" type="password" name="Password" placeholder="Konfirmo fjalëkalimin" required />
 					<input id="submit-su" type="submit" name="register_user" value="Regjistrohu" />
 					<p class="signupQuestion">
 						Keni një llogari ekzistuese?
@@ -82,6 +81,6 @@
 </section>
 <script src="js/login.js"></script>
 
-<?php 
-    include 'footer.php';
+<?php
+include 'footer.php';
 ?>

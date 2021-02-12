@@ -1,5 +1,7 @@
-<?php 
-    include 'header.php';
+<?php
+session_start();
+ob_start();
+include 'header.php';
 ?>
 <link rel="stylesheet" href="css/dogs.css">
 
@@ -20,6 +22,6 @@
     <!--SLIDER END-->
 </main>
 
-<?php 
-    include 'footer.php';
+<?php
+include 'footer.php';
 ?>
