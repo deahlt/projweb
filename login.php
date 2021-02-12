@@ -62,7 +62,7 @@
 					<label style="color: rgb(242, 210, 141)"><b>Konfirmo fjalëkalimin:</b></label>
 					<input id="password2-su" type="password" name="Password" placeholder="Konfirmo fjalëkalimin"
 						required />
-					<input id="submit-su" type="button" name="Submit" value="Regjistrohu" />
+					<input id="submit-su" type="button" name="register_user" value="Regjistrohu" />
 					<p class="signupQuestion">
 						Keni një llogari ekzistuese?
 						<a href="#" onclick="toggleForm();">Kyçu!</a>
