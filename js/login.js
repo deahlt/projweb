@@ -60,59 +60,27 @@ registerBtn.addEventListener('click', () => {
 			this.clearAlert();
 		}, 6000);
 	}
-	if (
-		expression.test(email.value) === true &&
-		name.value.length < 14 &&
-		name.value.length > 4 &&
-		pass.value === conPass.value &&
-		pass.value.length > 8
-	) {
-		alert('Informatat janë në rregull!');
-		location.reload();
-	}
+	
 });
 
-logIn.addEventListener('click', () => {
-	if (logInName.value === '') {
-		warnNameError.style.display = 'block';
+// logIn.addEventListener('click', () => {
+// 	if (logInName.value === '') {
+// 		warnNameError.style.display = 'block';
 
-		setTimeout(() => {
-			this.clearAlert();
-		}, 6000);
-	}
-	if (logInPass.value === '') {
-		warnError.style.display = 'block';
+// 		setTimeout(() => {
+// 			this.clearAlert();
+// 		}, 6000);
+// 	// }
+	// if (logInPass.value === '') {
+	// 	warnError.style.display = 'block';
 
-		setTimeout(() => {
-			this.clearAlert();
-		}, 6000);
-	}
-	if (logInPass.value !== '' && logInName.value !== '') {
-		alert('Informatat janë në rregull!');
-		location.reload();
-	}
-});
+	// 	setTimeout(() => {
+	// 		this.clearAlert();
+	// 	}, 6000);
+	// }
+	// if (logInPass.value !== '' && logInName.value !== '') {
+	// 	alert('Informatat janë në rregull!');
+	// 	location.reload();
+	// }
+// });
 
-function clearAlert() {
-	if (warnLength) {
-		warnLength.style.display = 'none';
-	}
-	if (warnCon) {
-		warnCon.style.display = 'none';
-	}
-	if (warnNameLong) {
-		warnNameLong.style.display = 'none';
-	}
-	if (warnNameShort) {
-		warnNameShort.style.display = 'none';
-	}
-	if (warnEamil) {
-		warnEamil.style.display = 'none';
-	}
-	if (logInName) {
-		warnNameError.style.display = 'none';
-	}
-	if (logInPass) {
-		warnError.style.display = 'none';
-	}
-}

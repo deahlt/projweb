@@ -41,7 +41,7 @@
 			<!--FORM BOX-->
 			<div class="formBox">
 				<!--SIGN UP-->
-				<form id="form2">
+				<form id="form2" action = "./includes/registration_process.php" method=POST>
 					<h2>Regjistrohuni</h2>
 					<label style="color: rgb(242, 210, 141)"><b>Emri i përdoruesit:</b></label>
 					<input id="username-su" type="text" name="Username" placeholder="Krijoni një username" required />
@@ -62,7 +62,7 @@
 					<label style="color: rgb(242, 210, 141)"><b>Konfirmo fjalëkalimin:</b></label>
 					<input id="password2-su" type="password" name="Password" placeholder="Konfirmo fjalëkalimin"
 						required />
-					<input id="submit-su" type="button" name="register_user" value="Regjistrohu" />
+					<input id="submit-su" type="submit" name="register_user" value="Regjistrohu" />
 					<p class="signupQuestion">
 						Keni një llogari ekzistuese?
 						<a href="#" onclick="toggleForm();">Kyçu!</a>
