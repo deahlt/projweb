@@ -20,7 +20,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === "user") {
 </head>
 
 <div class="container">
-    <form id="contact" action="" method="post">
+    <form id="animal" action="./includes/animal_process.php" method="post" enctype="multipart/form-data">
         <h3>Add an animal</h3>
         <h4>Fill this form to add an animal</h4>
         <fieldset>
@@ -33,7 +33,10 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === "user") {
             <input placeholder="Species" type="text" tabindex="3" required name="animal_species">
         </fieldset>
         <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input type="file" name="animal_image">
+        </fieldset>
+        <fieldset>
+            <button name="animal_submit" type="submit" data-submit="...Sending">Submit</button>
         </fieldset>
     </form>
 
