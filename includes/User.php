@@ -51,11 +51,13 @@ class User
                 $db_user_id = $row['id'];
                 $db_username = $row['username'];
                 $db_user_password = $row['password'];
+                $db_user_role = $row['role'];
 
                 if (password_verify($this->password, $db_user_password)) {
                     $_SESSION['user_id'] = $db_user_id;
                     $_SESSION['username'] = $db_username;
                     $_SESSION['email'] = $this->email;
+                    $_SESSION['role'] = $db_user_role;
                     header("Location: ../index.php");
                 } else {
                     header("Location: ../login.php?error=invalid_email_or_pass");

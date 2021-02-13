@@ -21,7 +21,20 @@
                 <li><a href="dogs.php">Qentë tanë</a></li>
                 <li><a href="contactus.php">Kontakti</a></li>
                 <li><a href="news.php">News</a></li>
-                <li><a href="login.php">Kyçu | Regjistrohu</a></li>
+                <?php
+
+                if (isset($_SESSION['user_id'])) {
+                    echo "<li><a href='#'>Hello {$_SESSION['username']}</a></li>";
+                    echo "<li><a href='./includes/logout.php'>Logout</a></li>";
+                } else {
+                    echo "<li><a href='login.php'>Kyçu | Regjistrohu</a></li>";
+                }
+                if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+                    echo "<li><a href='admin.php'>Admin area</a></li>";
+                }
+
+                ?>
+
             </ul>
         </nav>
         <!--NAVBAR END-->
