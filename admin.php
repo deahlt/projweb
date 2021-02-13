@@ -16,27 +16,28 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === "user") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin area</title>
-    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="css/admin.css">
 </head>
+
 
 <div class="container">
     <form id="animal" action="./includes/animal_process.php" method="post" enctype="multipart/form-data">
-        <h3>Add an animal</h3>
-        <h4>Fill this form to add an animal</h4>
+        <h1>Shtoni një kafshë</h1>
+        <h3>Plotëso pyetësorin për të shtuar kafshë</h3>
         <fieldset>
-            <input placeholder="name" type="text" tabindex="1" required autofocus name="animal_name">
+            <input placeholder="Emri" class="emri" type="text" tabindex="1" required autofocus name="animal_name">
         </fieldset>
         <fieldset>
-            <input placeholder="Age" type="text" tabindex="2" name="animal_age" required>
+            <input placeholder="Mosha" class="mosha" type="text" tabindex="2" name="animal_age" required>
         </fieldset>
         <fieldset>
-            <input placeholder="Species" type="text" tabindex="3" required name="animal_species">
+            <input placeholder="Specia" class="specia" type="text" tabindex="3" required name="animal_species">
         </fieldset>
         <fieldset>
-            <input type="file" name="animal_image">
+            <input type="file" class="file" name="animal_image">
         </fieldset>
         <fieldset>
-            <button name="animal_submit" type="submit" data-submit="...Sending">Submit</button>
+            <button name="animal_submit" type="submit" data-submit="...Sending">Dërgo</button>
         </fieldset>
     </form>
 
