@@ -5,6 +5,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === "user") {
 } else if (!isset($_SESSION['role'])) {
     header("Location: ./login.php");
 }
+include 'header.php';
 ?>
 
 
@@ -45,3 +46,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === "user") {
 </div>
 
 </html>
+
+<?php
+include 'footer.php';
+?>

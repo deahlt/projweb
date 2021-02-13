@@ -1,6 +1,6 @@
 <footer>
     <!--FOOTER-->
-    <p>&copy;Copyright PETLOVE. By Dea Haliti and Lorik Halili for UBT.</p>
+    <p>&copy;Copyright PETLOVE. <a href="https://github.com/deahlt/projweb.git">By Dea Haliti and Lorik Halili for UBT.</a></p>
     <ul>
         <li><a href="https://facebook.com"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook" /></a>
         </li>
