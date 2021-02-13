@@ -3,7 +3,13 @@ session_start();
 ob_start();
 include 'header.php';
 ?>
-<link rel="stylesheet" href="css/aboutus.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <title>PETLOVE</title>
+</head>
 
 <main>
     <!--MAIN TEXT-->
@@ -22,7 +28,7 @@ include 'header.php';
             <br><br>
             Për më shumë:
         </p>
-        <a href="contactus.html" type="button" class="contactusButton">Na kontaktoni</a>
+        <a href="contactus.php" type="button" class="contactusButton">Na kontaktoni</a>
     </div>
     <!--MAIN TEXT END-->
 </main>
