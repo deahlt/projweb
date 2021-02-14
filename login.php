@@ -20,7 +20,7 @@ include 'header.php';
 				<!--SIGN IN-->
 				<form id="form1" method="post" action="./includes/login_process.php">
 					<h2>Kyçu</h2>
-					<label style="color: rgb(242, 210, 141)"><b>Emri i përdoruesit:</b></label>
+					<label style="color: rgb(242, 210, 141)"><b>Email i përdoruesit:</b></label>
 					<input id="username-si" type="email" name="Email" placeholder="Shkruani email tuaj" required />
 					<p id="warning-name-error">Shkruani një email valid.</p>
 					<label style="color: rgb(242, 210, 141)"><b>Fjalëkalimi:</b></label>
