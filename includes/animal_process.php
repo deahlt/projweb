@@ -11,7 +11,7 @@ if (isset($_POST['animal_submit'])) {
     $filename = $_FILES['animal_image']['name'];
     $tempname = $_FILES['animal_image']['tmp_name'];
     $folder = "C:\\XAMPP\htdocs\gitproject\projweb\img\\$filename";
-    $animal = new Animal($name, $age, $species, $db->dbconnection, $tempname, $tempname, $folder);
+    $animal = new Animal($name, $age, $species, $db->dbconnection, $filename, $tempname, $folder);
     $animal->saveAnimalToDb();
     header("Location: ../admin.php");
 }

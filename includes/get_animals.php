@@ -16,27 +16,22 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
     $animal_image = $row['animal_image'];
 
 
-    echo "<img src = 'file:XAMPP\htdocs\gitproject\projweb\img$animal_image'/>";
-    echo "<style>";
-    echo ".card--1 .card__img, .card--1 .card__img--hover {
-        background-image: import('C:\\XAMPP\htdocs\gitproject\projweb\img\\$animal_image');
-    }";
-    echo "</style>";
-    echo "<section class='cards'>";
-    echo "<article class='card card--1'>";
-    echo  "<img src='../css/$animal_image' class = ''>";
-    echo  "<div class='card__info-hover'>";
-    echo  "<img src='../css/$animal_image' class = ''>";
-    echo   "<div class='card__clock-info'>";
-    echo  "</div>";
-    echo   "</div>";
-    echo   "<div class='card__img'></div>";
-    echo   "<a href='#' class='card_link'>";
-    echo        "<div class='card__img--hover'></div>";
-    echo   "</a>";
-    echo   "<div class='card__info'>";
-    echo       "<span class='card__category'> $animal_name</span>";
-    echo       "<h3 class='card__title'>This is a $animal_name which is a species of $animal_species which is $animal_age years old</h3>";
+    echo "<div class='container'>";
+    echo   " <div class='card'>";
+    echo       "<div class='card-header'>";
+    echo       " </div>";
+    echo        "<div class='card-body'>";
+    echo           "<h4>$animal_name</h4>";
+    echo          "<p>";
+    echo                "$animal_name is a very buetiful $animal_species and it is $animal_age years old";
+    echo         "</p>";
+    echo                 "<img src = 'file://C:/XAMPP/htdocs/gitproject/projweb/img/$animal_image' width= '200' height = '200'/>";
+    echo          "<div class='user'>";
+    echo             " <div class='user-info'>";
+    echo               "<h5>$animal_species</h5>";
+    echo           "</div>";
+    echo       "</div>";
+    echo     "</div>";
     echo    "</div>";
-    echo "</article>";
 }
+#C:\XAMPP\htdocs\gitproject\projweb\img
