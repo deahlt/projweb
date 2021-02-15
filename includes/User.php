@@ -58,7 +58,7 @@ class User
                     $_SESSION['username'] = $db_username;
                     $_SESSION['email'] = $this->email;
                     $_SESSION['role'] = $db_user_role;
-                    header("Location: ../index.php");
+                    header("Location: ../dashboard.php");
                 } else {
                     header("Location: ../login.php?error=invalid_email_or_pass");
                     exit();
