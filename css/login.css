@@ -9,7 +9,6 @@
 }
 
 /*NAVBAR*/
-
 nav {
 	z-index: 1;
 	position: fixed;
@@ -20,50 +19,47 @@ nav {
 	align-items: center;
 	min-height: 8vh;
 	background-color: #4d1605db;
-	padding:0;
-    margin:0;
+	padding: 0;
+	margin: 0;
 }
 
 .logo {
-	background: -webkit-linear-gradient(
-		rgb(255, 174, 0),
-		rgb(172, 0, 0)
-	);
+	background: -webkit-linear-gradient(rgb(255, 174, 0), rgb(172, 0, 0));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 2.5rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
 .nav-links {
-	display: flex;
-	justify-content: space-around;
-	width: 50%;
+	margin: 0;
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
 .nav-links li {
-	list-style: none;
+	text-transform: uppercase;
+	display: inline;
 }
 
 .nav-links a {
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: bold;
-	color: white;
+	letter-spacing: 2px;
 	font-size: 13px;
-	text-transform: uppercase;
+	text-decoration: none;
 	padding: 7px 13px;
+	color: #fff;
+	font-weight: bold;
 	border-radius: 20px;
 }
 
 .nav-links a:hover {
 	transition: 0.5s;
-	background-color: rgb(208, 128, 44);
-}
-
-.nav-links a:active {
-	background-color: rgb(208, 44, 44);
+	background-color: rgba(208, 129, 44, 0.863);
+	border-radius: 15px;
 }
 
 /*NAVBAR END*/
@@ -77,11 +73,9 @@ nav {
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
-	background-image: linear-gradient(
-			30deg,
+	background-image: linear-gradient(30deg,
 			rgba(250, 14, 14, 0.5),
-			rgba(243, 208, 9, 0.75)
-		),
+			rgba(243, 208, 9, 0.75)),
 		url('../img/paws.jpg');
 }
 
@@ -301,12 +295,12 @@ footer {
 	width: 100%;
 	background: #351301;
 	color: #fff;
-	display: grid;
 	place-items: center;
-	padding: 0.5em;
 	font-size: 1.2rem;
-	padding:0;
-    margin:0;
+	margin: 0;
+	display: grid;
+	flex-flow: row wrap;
+	padding: 20px 30px 20px 30px;
 }
 
 footer p {
@@ -323,8 +317,14 @@ footer li {
 	padding: 7px;
 }
 
-footer p a{
-    text-decoration: none;
-    color: rgba(255, 175, 1, 0.678);
+footer p a {
+	text-decoration: none;
+	color: rgba(255, 175, 1, 0.678);
 }
+
+footer p a {
+	text-decoration: none;
+	color: rgba(255, 175, 1, 0.678);
+}
+
 /* FOOTER END*/
