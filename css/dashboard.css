@@ -115,6 +115,15 @@ a {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(172, 0, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+	text-align: center;
+	padding-bottom: 10px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+.main-content p{
+	text-align: center;
+	padding-bottom: 10px;
+	text-shadow: 2px 2px 5px rgba(255, 81, 0, 0.664);
 }
 
 .main-content .panel-wrapper {
@@ -178,3 +187,44 @@ a {
 		position: relative;
 	}
 }
+
+table {
+	height: 40%;
+	left: 10%;
+	margin: 20px auto;
+	overflow-y: scroll;
+	position: flexbox;
+	width: 80%;
+  }
+
+  thead th {
+	background: #e67e22;
+	color: #FFF;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	border: 2px solid rgba(58, 29, 2, 0.486);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  tr {
+	background: #f4f7f8;
+	border-bottom: 1px solid #FFF;
+	margin-bottom: 5px;
+  }
+  
+  th, td {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 20px;
+	text-align: left;
+	width: 33.3333%;
+	border-radius: 4px;
+	border: 2px solid rgba(0, 0, 0, 0.247);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  

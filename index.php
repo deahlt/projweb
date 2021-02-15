@@ -16,7 +16,7 @@ include 'header.php';
     <div id="main-section">
         <h1>Duaj kafshët! 🐾 </h1>
         <p>T'i ndihmojmë miqtë tanë jetësor!</p>
-        <a href="aboutus.html" type="button" class="aboutusButton">Rreth nesh</a>
+        <a href="aboutus.php" type="button" class="aboutusButton">Rreth nesh</a>
     </div>
     <!--MAIN TEXT END-->
 </main>

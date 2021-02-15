@@ -32,31 +32,27 @@ ob_start();
 		<div class="main-content">
 			<h1>Dashboard</h1>
 			<p>Pjesa e admin-it</p>
-			<div class="panel-wrapper">
-				<div class="panel-head">
-					News
-				</div>
-				<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt.
-				</div>
-			</div>
-			<div class="panel-wrapper">
-				<div class="panel-head">
-					News
-				</div>
-				<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt.
-				</div>
-			</div>
-			<div class="panel-wrapper">
-				<div class="panel-head">
-					News
-				</div>
-				<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt.
-				</div>
-			</div>
+			<p>Këto janë mesazhet e pranuara nga vizituesit e faqes të cilët na kontaktuan!</p>
+			<table>
+ 		<thead>
+      <tr>
+        <th>Emri</th>
+        <th>Email</th>
+        <th>Mesazhi</th>      
+      </tr>
+    </thead>
+    <tbody>
+   	  <tr>
+        <td>Jane Doe</td>
+        <td>test@gmail.com</td>
+        <td>Hey! I found a dog!</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
 		</div>
+
 	</div>
     </body>
     </html>
