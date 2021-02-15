@@ -11,8 +11,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">AboutUs</a></li>
-                <li><a href="dogs.php">Dogs</a></li>
+                <li><a href="aboutus.php">About</a></li>
+                <li><a href="pets.php">Pets</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li><a href="news.php">News</a></li>
                 <?php
@@ -24,7 +24,7 @@
                     echo "<li><a href='login.php'>LogIn|Register</a></li>";
                 }
                 if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-                    echo "<li><a href='admin.php'>Admin</a></li>";
+                    echo "<li><a href='dashboard.php'>Dashbrd</a></li>";
                 }
 
                 ?>
