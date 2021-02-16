@@ -75,8 +75,7 @@ body {
   backdrop-filter: blur(2px);
 }
 
-<<<<<<< HEAD
-=======
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -152,7 +151,7 @@ body {
   }
 }
 
->>>>>>> 5aab6a299788ecad034671d4071a86fe2d2b8b7a
+
 /* FOOTER */
 footer {
   position: absolute;
@@ -160,12 +159,12 @@ footer {
   width: 100%;
   background: #351301;
   color: #fff;
-  display: grid;
   place-items: center;
-  padding: 0.5em;
   font-size: 1.2rem;
-  padding: 0;
   margin: 0;
+  display: grid;
+  flex-flow: row wrap;
+  padding: 20px 30px 20px 30px;
 }
 
 footer p {
@@ -180,6 +179,11 @@ footer li {
   display: inline-block;
   justify-content: space-between;
   padding: 7px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: rgba(255, 175, 1, 0.678);
 }
 
 footer p a {
