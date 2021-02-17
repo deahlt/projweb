@@ -73,20 +73,23 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(2px);
+  width: 100%;
+  display:flex;
 }
 
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row; 
+  margin: auto;
   gap: 20px;
   width: 940px;
-  margin: 0;
   position:relative;
   
-}
-
-.card {
+  }
+  
+  .card {
   background-color: #fff;
   border-radius: 10px;
   width: 300px;
@@ -95,8 +98,8 @@ body {
   background-color: #f8e7cbec;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  
-}
+  min-width: 300px; /*set a min width to force cards to be this wide*/
+  }
 
 .card-header img {
   width: 100%;
@@ -154,7 +157,7 @@ body {
 
 /* FOOTER */
 footer {
-  position: absolute;
+  position: fixed;
   top: 100%;
   width: 100%;
   background: #351301;

@@ -5,16 +5,43 @@ include 'header.php';
 ?>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contactus.css">
-    <title>PETLOVE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contactus.css">
+  <title>PETLOVE</title>
 </head>
 
 <div class="contact-form">
   <h1>Kontakti</h1>
   <div id="error_message"></div>
-  <form id="myform" onsubmit="return validation ()">
+
+  <!--  onsubmit="return validation ()"-->
+
+  <?php
+
+  if (isset($_POST['submit'])) {
+
+    $name = $_POST['name'];
+    $mailFrom = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+
+
+    $conn = mysqli_connect('localhost', 'root', '', 'doglover');
+
+
+    $interset = "INSERT into email (name,email,number,message) VALUES ('{$name}','{$mailFrom}','{$phone}','{$message}')";
+
+    mysqli_query($conn, $interset);
+  } else {
+    null;
+  }
+
+  ?>
+
+
+  <!-- php code goes here -->
+  <form action="contactus.php" method="POST" id="myform">
     <div class="txtb">
       <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
     </div>
@@ -31,7 +58,7 @@ include 'header.php';
       <textarea id="message" name="message" placeholder="Mesazhi.."></textarea>
     </div>
     <div class="btn">
-      <input type="submit" name="submit " value="Dërgo">
+      <input type="submit" name="submit" value="Dërgo">
     </div>
   </form>
 </div>

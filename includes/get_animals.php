@@ -8,6 +8,7 @@ $connection = $db->dbconnection;
 $query = "SELECT * FROM animals";
 $grab_animals_query = mysqli_query($connection, $query);
 
+echo "<div class='container'>";
 while ($row = mysqli_fetch_assoc($grab_animals_query)) {
 
     $animal_name = $row['animal_name'];
@@ -16,7 +17,7 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
     $animal_image = $row['animal_image'];
 
 
-/*echo "<div class='container'>";
+
     echo   " <div class='card'>";
     echo       "<div class='card-header'>";
     echo       " </div>";
@@ -32,6 +33,7 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
     echo           "</div>";
     echo       "</div>";
     echo     "</div>";
-    echo    "</div>";*/
+    echo    "</div>";
 }
+echo    "</div>";
 #C:\XAMPP\htdocs\gitproject\projweb\img
