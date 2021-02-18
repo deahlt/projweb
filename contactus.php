@@ -1,6 +1,12 @@
 <?php
 session_start();
 ob_start();
+
+if (!isset($_SESSION['username'])) {
+  header("location: login.php");
+} else {
+  null;
+}
 include 'header.php';
 ?>
 
