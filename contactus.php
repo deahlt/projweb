@@ -1,27 +1,29 @@
 <?php
 session_start();
 ob_start();
-
-if (!isset($_SESSION['username'])) {
-  header("location: login.php");
-} else {
-  null;
-}
-include 'header.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/contactus.css">
-  <title>PETLOVE</title>
+	<?php include 'pageIncludes/includetoheadtag.php';?>
+
+	  	<title><?php echo $title;?> - <?php echo basename(__FILE__, '.php');?> </title>
 </head>
+
+
+<body class="<?php echo basename(__FILE__, '.php');?>">
+  <header>
+  	<?php include 'pageIncludes/header.php'; ?>
+  </header>
+
+  <main>
 
 <div class="contact-form">
   <h1>Kontakti</h1>
   <div id="error_message"></div>
 
-  <!--  onsubmit="return validation ()"-->
+ 
 
   <?php
 
@@ -46,7 +48,7 @@ include 'header.php';
   ?>
 
 
-  <!-- php code goes here -->
+
   <form action="contactus.php" method="POST" id="myform">
     <div class="txtb">
       <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
@@ -64,13 +66,18 @@ include 'header.php';
       <textarea id="message" name="message" placeholder="Mesazhi.."></textarea>
     </div>
     <div class="btn">
-      <input type="submit" name="submit" value="Dërgo">
+      <input type="submit" name="submit">
     </div>
   </form>
 </div>
 
-<script src="js/contactus.js"></script>
 
 <?php
-include 'footer.php';
+include 'pageIncludes/footer.php';
 ?>
+
+<script src="js/contactus.js"></script>
+
+
+</body>
+</html>

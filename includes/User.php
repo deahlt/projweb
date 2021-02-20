@@ -24,7 +24,7 @@ class User
     public function registerUser()
     {
         $query = "INSERT INTO users(username,email,password)";
-        $query .= "VALUES(?,?,?)";  //We use prepared statments here to clean the users entry. Never do queries with un sanitized data other people can hack your app and not using prepared statments is a bad practice.
+        $query .= "VALUES(?,?,?)"; 
         $hashed_pass = password_hash($this->password, PASSWORD_BCRYPT, ["cost" => 12]);
         $stmt = mysqli_stmt_init($this->connect);
         if (!mysqli_stmt_prepare($stmt, $query)) {

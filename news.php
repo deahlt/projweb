@@ -1,28 +1,29 @@
 <?php
 ob_start();
 session_start();
-include 'header.php';
 ?>
-
-<link rel="stylesheet" href="./css/news.css">
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News</title>
-    <?php include_once("./includes/get_animals.php"); ?>
+  <?php include 'pageIncludes/includetoheadtag.php';?>
+  <title><?php echo $title;?> - <?php echo basename(__FILE__, '.php');?></title>
 </head>
 
-<body>
+
+<body class="<?php echo basename(__FILE__, '.php');?>">
+  <header>
+    <?php include 'pageIncludes/header.php'; ?>
+  </header>
+
+  <main>
+    <?php include_once("./includes/get_animals.php"); ?>
+  </main>
+  <?php
+  include 'pageIncludes/footer.php';
+  ?>
 
 </body>
 
 </html>
-
-
-<?php
-include 'footer.php';
-?>

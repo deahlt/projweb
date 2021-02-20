@@ -63,24 +63,24 @@ registerBtn.addEventListener('click', () => {
 	
 });
 
- logIn.addEventListener('click', () => {
-	if (logInName.value === '') {
- 		warnNameError.style.display = 'block';
+// logIn.addEventListener('click', () => {
+// 	if (logInName.value === '') {
+// 		warnNameError.style.display = 'block';
 
-		setTimeout(() => {
-			this.clearAlert();
- 		}, 6000);
- }
-	 if (logInPass.value === '') {
-	 	warnError.style.display = 'block';
+// 		setTimeout(() => {
+// 			this.clearAlert();
+// 		}, 6000);
+// 	// }
+	// if (logInPass.value === '') {
+	// 	warnError.style.display = 'block';
 
-	 	setTimeout(() => {
-	 		this.clearAlert();
-	 	}, 6000);
- }
-	 if (logInPass.value !== '' && logInName.value !== '') {
-	 	alert('Informatat janë në rregull!');
-	 	location.reload();
-	 }
- });
+	// 	setTimeout(() => {
+	// 		this.clearAlert();
+	// 	}, 6000);
+	// }
+	// if (logInPass.value !== '' && logInName.value !== '') {
+	// 	alert('Informatat janë në rregull!');
+	// 	location.reload();
+	// }
+// });
 

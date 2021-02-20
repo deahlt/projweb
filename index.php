@@ -1,20 +1,28 @@
 <?php
 session_start();
 ob_start();
-include 'header.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>PETLOVE</title>
+	<?php include 'pageIncludes/includetoheadtag.php';?>
+	<title><?php echo $title;?> - <?php echo basename(__FILE__, '.php');?></title>
 </head>
+
+<body class="<?php echo basename(__FILE__, '.php');?>">
+
+
+  <header>
+    <?php include 'pageIncludes/header.php';?>
+  </header>
+
 
 <main>
     <!--MAIN TEXT-->
     <div id="main-section">
-        <h1>Duaj kafshët! 🐾 </h1>
+        <h1>Duaj Kafshët! 🐾 </h1>
         <p>T'i ndihmojmë miqtë tanë jetësor!</p>
         <a href="aboutus.php" type="button" class="aboutusButton">Rreth nesh</a>
     </div>
@@ -22,5 +30,8 @@ include 'header.php';
 </main>
 
 <?php
-include 'footer.php';
+	include 'pageIncludes/footer.php';
 ?>
+
+</body>
+</html>

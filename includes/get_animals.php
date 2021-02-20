@@ -1,6 +1,7 @@
 <?php
 include_once("db.php");
 
+
 $db = new Db();
 $db->connect();
 $connection = $db->dbconnection;
@@ -15,6 +16,7 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
     $animal_age = $row['animal_age'];
     $animal_species = $row['animal_species'];
     $animal_image = $row['animal_image'];
+    $author_name = $row['author_name'];
 
 
 
@@ -22,18 +24,18 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
     echo       "<div class='card-header'>";
     echo       " </div>";
     echo        "<div class='card-body'>";
-    echo           "<h4>$animal_name</h4>";
+    echo                 "<img src = 'img/$animal_image' width= '239' height = '200'/>";
     echo          "<p>";
-    echo                "$animal_name is a very buetiful $animal_species and it is $animal_age years old";
+    echo                "$animal_name , a $animal_species, of the $animal_age of years old";
     echo         "</p>";
-    echo                 "<img src = 'file://C:/XAMPP/htdocs/gitproject/projweb/img/$animal_image' width= '200' height = '200'/>";
     echo          "<div class='user'>";
     echo             " <div class='user-info'>";
-    echo               "<h5>$animal_species</h5>";
-    echo           "</div>";
+    echo               "<p>";
+    echo                     "$author_name";
+    echo                    "</p>";       
+    echo               "</div>";
     echo       "</div>";
     echo     "</div>";
     echo    "</div>";
 }
 echo    "</div>";
-#C:\XAMPP\htdocs\gitproject\projweb\img

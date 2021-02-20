@@ -1,5 +1,7 @@
 <?php
 
+require ("upload.php");
+
 class Animal
 {
 
@@ -27,7 +29,7 @@ class Animal
     public function saveAnimalToDb()
     {
         $query = "INSERT INTO animals(animal_name,animal_age,animal_species,animal_image)";
-        $query .= "VALUES(?,?,?,?)";  //We use prepared statments here to clean the users entry. Never do queries with un sanitized data other people can hack your app and not using prepared statments is a bad practice
+        $query .= "VALUES(?,?,?,?)"; 
         $stmt = mysqli_stmt_init($this->connection);
         if (!mysqli_stmt_prepare($stmt, $query)) {
             die("QUERY FAILED" . mysqli_error($this->connection));
@@ -35,7 +37,6 @@ class Animal
             mysqli_stmt_bind_param($stmt, 'ssss', $this->name, $this->age, $this->species, $this->filename);
             mysqli_stmt_execute($stmt);
             move_uploaded_file($this->filename, $this->folder);
-            // copy($this->filename, $this->folder);
         }
     }
 }

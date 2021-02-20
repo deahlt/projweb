@@ -1,6 +1,7 @@
 <?php
 require_once("Animal.php");
 require_once("db.php");
+require_once("upload.php");
 
 if (isset($_POST['animal_submit'])) {
     $name = $_POST['animal_name'];
@@ -10,7 +11,7 @@ if (isset($_POST['animal_submit'])) {
     $species = $_POST['animal_species'];
     $filename = $_FILES['animal_image']['name'];
     $tempname = $_FILES['animal_image']['tmp_name'];
-    $folder = "C:\\XAMPP\htdocs\gitproject\projweb\img\\$filename";
+    $folder = "img\\$filename";
     $animal = new Animal($name, $age, $species, $db->dbconnection, $filename, $tempname, $folder);
     $animal->saveAnimalToDb();
     header("Location: ../admin.php");

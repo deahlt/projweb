@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+  width: 100%;
+}
+
+/* MAIN */
+body {
+    min-height: calc(100vh - 155px);
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/aboutusImg.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    backdrop-filter: blur(2px) !important;
+    position: relative;
+    width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+
+
+#main-section {
+    width: 85%;
+    max-width: 90%;
+    background: rgba(67, 31, 4, 0.77);
+    padding: 30px 40px;
+    border-radius: 40px 40px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+}
+
+@media (max-width: 1024px) {
+  #main-section {
+    position: relative;
+  }
+}
+
+@media (min-width: 1025px) {
+  #main-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#main-section h1 {
+    padding-bottom: 10px;
+    font-size: 2rem;
+    color: #f28a02;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+#main-section p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+#main-section a {
+    text-decoration: none;
+}
+
+#main-section ul li a {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 7px;
+
+}
+
+
+
+.contactusButton {
+    display: inline-block;
+    padding: 5px 15px;
+    color: rgb(68, 0, 0);
+    background-color: rgba(243, 138, 0, 0.741);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin-top: 25px;
+    transition: 1s;
+    border-radius: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+.contactusButton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(51, 0, 0, 0.555);
+}
+
+
+/* MAIN END */
