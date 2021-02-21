@@ -114,6 +114,11 @@ input {
     font-size: 13px;
 }
 
+input.disabled {
+  opacity: .5;
+  background: #ccc;
+}
+
 fieldset {
     border: medium none !important;
     margin: 0 0 10px;

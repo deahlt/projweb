@@ -3,6 +3,11 @@ body.contactus {
 }
 
 
+.alertbox {
+  color: #fff;
+}
+
+
 .contact-form {
   width: 85%;
   max-width: 600px;

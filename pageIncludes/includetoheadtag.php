@@ -1,10 +1,11 @@
 <?php
 $title = 'PETLOVE'; /*shown in the browser*/
-$url = $_SERVER["REQUEST_URI"];
-$adminpos = strrpos($url, "admin.php");
-$indexpos = strrpos($url, "index.php");
-$login = strrpos($url, "login.php");
-$news = strrpos($url, "news.php");
+$currentpage = $_SERVER["REQUEST_URI"];
+$adminpos = strrpos($currentpage, "admin.php");
+$home = strrpos($currentpage, "/index.php");
+$homeurl = strrpos($currentpage, "/");
+$login = strrpos($currentpage, "login.php");
+$news = strrpos($currentpage, "news.php");
 
 $cssdirpath = "css";
 ?>
@@ -20,7 +21,7 @@ $cssdirpath = "css";
 
 <link rel="stylesheet" type="text/css" href="<?php echo $cssdirpath;?>/cssforallpages.css">
 
-<?php if($indexpos != false) {
+<?php if(($home || $homeurl) != false) {
   echo '<link rel="stylesheet" type="text/css" href="'. $cssdirpath .'/index.css">';
 }
 ;?>

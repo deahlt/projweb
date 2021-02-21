@@ -2,7 +2,7 @@
 
 <?php
 $url = $_SERVER["REQUEST_URI"];
-$pos = strrpos($url, "dashboard.php"); 
+$pos = strrpos($url, "dashboard.php");
 ;?>
 
     <!--NAVBAR-->
@@ -33,7 +33,6 @@ $pos = strrpos($url, "dashboard.php");
                     if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
                         echo "<li><a href='dashboard.php'><span class='link-title'>Dashboard</span></a></li>";
 
-                    
                         if($pos != false) {
                             echo "<li><a href='admin.php'><span class='link-title'>Add Pet</span></a></li>";
                         }

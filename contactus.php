@@ -23,7 +23,8 @@ ob_start();
   <h1>Kontakti</h1>
   <div id="error_message"></div>
 
- 
+
+<?php if (isset($_SESSION['user_id'])) :?> 
 
   <?php
 
@@ -49,7 +50,7 @@ ob_start();
 
 
 
-  <form action="contactus.php" method="POST" id="myform">
+  <form action="contactus.php" method="POST" id="myform" onsubmit="event.preventDefault(); validation(this);">
     <div class="txtb">
       <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
     </div>
@@ -69,8 +70,15 @@ ob_start();
       <input type="submit" name="submit">
     </div>
   </form>
-</div>
+<?php else :?> 
 
+	<div class="alertbox">
+		<p>Ju lutem, krijoni një llogari në mënyrë që të kontaktoni me ne.</p>
+	</div>
+
+<?php endif;?>
+</div>
+</main>
 
 <?php
 include 'pageIncludes/footer.php';

@@ -4,10 +4,11 @@ body.login {
             rgba(243, 208, 9, 0.75)),
         url('../img/paws.jpg');
 }
+
+
 .mainSection {
 	position: relative;
 	align-items: center;
-	padding: 20px;
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -132,7 +133,7 @@ form input {
 	}
 
 	.user.signupBox {
-		flex-direction: column-reverse; 
+		flex-direction: column-reverse;
 	}
 
 
@@ -152,8 +153,9 @@ form input {
 @media (min-width: 769px) {
 
 	.mainContainer {
-		height: 500px;
+		height: 580px;
 	}
+
 
 	.imageBox, .formBox {
 		width: 50%;

@@ -20,7 +20,7 @@ ob_start();
 
 
 	<main>
-		
+
 	<div class="container">
 
 
@@ -49,7 +49,7 @@ ob_start();
 
 							$conn = mysqli_connect('localhost', 'root', '', 'doglover');
 
-							$all = "SELECT * FROM email";
+							$all = "SELECT * FROM email ORDER BY id DESC";
 
 							$stmt = mysqli_query($conn, $all);
 
