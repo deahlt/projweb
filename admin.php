@@ -36,11 +36,19 @@ $dt->setTimestamp($timestampp);
 
 
           <fieldset>
+<<<<<<< HEAD
               <input class="name disabled" type="text" name="author_name" value="<?php echo $_SESSION['username']; ?>" readonly>
           </fieldset>
 
           <fieldset>
               <input class="name disabled" type="text" name="time_stamp" value="<?php echo $dt->format('d.m.Y'); ?>" readonly>
+=======
+              <input class="name disabled" type="hidden" name="author_name" value="<?php echo $_SESSION['username']; ?>" readonly>
+          </fieldset>
+
+          <fieldset>
+              <input class="name disabled" type="hidden" name="time_stamp" value="<?php echo $dt->format('d.m.Y'); ?>" readonly>
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
           </fieldset>
 
           <fieldset>

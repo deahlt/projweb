@@ -50,7 +50,11 @@ ob_start();
 
 
 
+<<<<<<< HEAD
 <form action="contactus.php" method="POST" id="myform" onsubmit="return validation()">
+=======
+  <form action="contactus.php" method="POST" id="myform" onsubmit="event.preventDefault(); validation(this);">
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
     <div class="txtb">
       <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
     </div>
@@ -72,9 +76,15 @@ ob_start();
   </form>
 <?php else :?> 
 
+<<<<<<< HEAD
     <div class="alertbox">
         <p>Ju lutem, krijoni një llogari në mënyrë që të kontaktoni me ne.</p>
     </div>
+=======
+	<div class="alertbox">
+		<p>Ju lutem, krijoni një llogari në mënyrë që të kontaktoni me ne.</p>
+	</div>
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
 
 <?php endif;?>
 </div>

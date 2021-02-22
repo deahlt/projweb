@@ -9,7 +9,11 @@ function validation(form) {
 
     error_message.style.padding = "10px";
 
+<<<<<<< HEAD
     if ($name.length < 3) {
+=======
+    if ($name.length < 7) {
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
         text = "Shkruani emrin tuaj të plotë!";
         error_message.innerHTML = text;
         return false;

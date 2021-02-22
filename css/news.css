@@ -84,7 +84,10 @@ body.news {
   flex-direction: column;
   align-items: start;
   margin-top: 15px;
+<<<<<<< HEAD
   /*min-height: 250px;*/
+=======
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
 }
 
 .card-body h4 {
@@ -93,7 +96,10 @@ body.news {
 
 .card-body p {
   font-size: 20px;
+<<<<<<< HEAD
   /*margin: 0 0 40px 0;*/
+=======
+>>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
   font-weight: 500;
   color: rgb(70, 68, 68);
 }
