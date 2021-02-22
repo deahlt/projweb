@@ -3,16 +3,20 @@ body.contactus {
 }
 
 
+.alertbox {
+  color: #fff;
+}
+
+
 .contact-form {
   width: 85%;
   max-width: 600px;
   background: rgba(67, 31, 4, 0.77);
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
   padding: 30px 40px;
-  box-sizing: none;
   border-radius: 40px 40px;
   text-align: center;
   box-shadow: 0 0 20px #000000b3;

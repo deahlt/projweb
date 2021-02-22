@@ -10,10 +10,10 @@ if (($_FILES['animal_image']['name']!="")){
  $path_filename_ext = $target_dir.$filename.".".$ext;
 
 if (file_exists($path_filename_ext)) {
- echo "Sorry, file already exists.";
+ echo "Kerkojme ndjesë, dokumenti egziston";
  }else{
  move_uploaded_file($temp_name,$path_filename_ext);
- echo "Congratulations! File Uploaded Successfully.";
+ echo "Dokumenti u dërgua me sukses!";
  }
 }
 

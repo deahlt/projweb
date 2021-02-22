@@ -1,6 +1,8 @@
 <?php
 session_start();
 ob_start();
+
+
 ?>
 
 <!DOCTYPE html>

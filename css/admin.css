@@ -24,11 +24,12 @@ form {
 
 @media (min-width: 1025px) {
     .container {
-      position: absolute;
+      /*position: absolute;
       top: 50%;
-      left: 50%;
-      height: auto;
+
       transform: translate(-50%, -50%);
+      left: 50%;*/
+      height: auto;
     }
 }
 
@@ -112,6 +113,11 @@ input {
     margin: 5px 0 15px;
     display: block;
     font-size: 13px;
+}
+
+input.disabled {
+  opacity: .5;
+  background: #ccc;
 }
 
 fieldset {

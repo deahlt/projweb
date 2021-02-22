@@ -1,6 +1,11 @@
 <?php
 session_start();
 ob_start();
+
+
+
+
+$fieldreqmsg = "Te gjitha fushat duhen plotësuar";
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +42,11 @@ ob_start();
 						<!--SIGN IN-->
 						<form id="form1" method="post" action="./includes/login_process.php">
 							<h2>Kyçu</h2>
+							<div class="required-text">
+								<p>
+									<?php echo $fieldreqmsg;?>
+								</p>
+							</div>
 							<label style="color: rgb(242, 210, 141)"><b>Email i përdoruesit:</b></label>
 							<input id="username-si" type="email" name="Email" placeholder="Shkruani email tuaj"
 								required />
@@ -63,6 +73,11 @@ ob_start();
 						<!--SIGN UP-->
 						<form id="form2" action="./includes/registration_process.php" method=POST>
 							<h2>Regjistrohuni</h2>
+							<div class="required-text">
+								<p>
+									<?php echo $fieldreqmsg;?>
+								</p>
+							</div>
 							<label style="color: rgb(242, 210, 141)"><b>Emri i përdoruesit:</b></label>
 							<input id="username-su" type="text" name="Username" placeholder="Krijoni një username"
 								required />
@@ -106,8 +121,8 @@ ob_start();
 	</main>
 
 	<?php
-	include 'pageIncludes/footer.php';
-?>
+		include 'pageIncludes/footer.php';
+	?>
 
 
 	<script src="js/login.js"></script>

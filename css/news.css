@@ -1,5 +1,6 @@
 body.news {
   background: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/catrun.jpg");
+    background-attachment: fixed !important;
 }
 
 .news .container {
@@ -20,13 +21,15 @@ body.news {
 }
 
   .card {
-  border-radius: 10px;
-  margin: 10px;
-  position: relative;
-  background-color: #f8e7cbec;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    background-color: #f8e7cbec;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 480px) {
@@ -54,18 +57,34 @@ body.news {
     }
   }
 
-.card-header img {
-  width: 100%;
+  .card-header img {
+    min-width: 100%;
+    /*height: 200px;*/
+    object-fit: cover;
+    height: 100%;
+  }
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
-  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
+
+.card-header .fa-image {
+  font-size: 7rem;
+  color: rgba(0,0,0,.2);
+}
+
 
 .card-body {
   display: flex;
   flex-direction: column;
   align-items: start;
-
-  min-height: 250px;
+  margin-top: 15px;
+  /*min-height: 250px;*/
 }
 
 .card-body h4 {
@@ -74,16 +93,37 @@ body.news {
 
 .card-body p {
   font-size: 20px;
-  margin: 0 0 40px 0;
+  /*margin: 0 0 40px 0;*/
   font-weight: 500;
   color: rgb(70, 68, 68);
 }
 
+.author, .date {
+  font-size: 1rem;
+  color: #a1886a;
+  width: 50%;
+}
+
+.author {
+  text-align: right;
+}
+
+.user-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+}
+
 .user {
   display: flex;
+  width: 100%;
   margin-top: auto;
   position: relative !important;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
+
 
 .user img {
   width: 40px;
