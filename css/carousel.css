@@ -7,10 +7,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-<<<<<<< HEAD
   border-radius: 15px;
-=======
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
 }
 
 @media (max-width: 480px) {

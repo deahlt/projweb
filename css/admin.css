@@ -1,12 +1,9 @@
-
-
-
 body.admin {
-  background: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/admin.jpg");
+    background: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/admin.jpg");
 }
 
 form {
-  width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -24,12 +21,12 @@ form {
 
 @media (min-width: 1025px) {
     .container {
-      /*position: absolute;
+        /*position: absolute;
       top: 50%;
 
       transform: translate(-50%, -50%);
       left: 50%;*/
-      height: auto;
+        height: auto;
     }
 }
 
@@ -116,8 +113,8 @@ input {
 }
 
 input.disabled {
-  opacity: .5;
-  background: #ccc;
+    opacity: .5;
+    background: #ccc;
 }
 
 fieldset {
@@ -127,6 +124,7 @@ fieldset {
     padding: 0;
     width: 100%;
 }
+
 #contact input,
 #contact textarea {
     width: 100%;
@@ -135,6 +133,7 @@ fieldset {
     margin: 0 0 5px;
     padding: 10px;
 }
+
 #contact textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;

@@ -5,28 +5,29 @@ ob_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <?php include 'pageIncludes/includetoheadtag.php';?>
 
-          <title><?php echo $title;?> - <?php echo basename(__FILE__, '.php');?> </title>
+<head>
+  <?php include 'pageIncludes/includetoheadtag.php';?>
+
+  <title><?php echo $title;?> - <?php echo basename(__FILE__, '.php');?> </title>
 </head>
 
 
 <body class="<?php echo basename(__FILE__, '.php');?>">
   <header>
-      <?php include 'pageIncludes/header.php'; ?>
+    <?php include 'pageIncludes/header.php'; ?>
   </header>
 
   <main>
 
-<div class="contact-form">
-  <h1>Kontakti</h1>
-  <div id="error_message"></div>
+    <div class="contact-form">
+      <h1>Kontakti</h1>
+      <div id="error_message"></div>
 
 
-<?php if (isset($_SESSION['user_id'])) :?> 
+      <?php if (isset($_SESSION['user_id'])) :?>
 
-  <?php
+      <?php
 
   if (isset($_POST['submit'])) {
 
@@ -50,52 +51,43 @@ ob_start();
 
 
 
-<<<<<<< HEAD
-<form action="contactus.php" method="POST" id="myform" onsubmit="return validation()">
-=======
-  <form action="contactus.php" method="POST" id="myform" onsubmit="event.preventDefault(); validation(this);">
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
-    <div class="txtb">
-      <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
-    </div>
+      <form action="contactus.php" method="POST" id="myform" onsubmit="return validation()">
+        <div class="txtb">
+          <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
+        </div>
 
-    <div class="txtb">
-      <input type="email" name="email" placeholder="Emaili juaj" id="email">
-    </div>
+        <div class="txtb">
+          <input type="email" name="email" placeholder="Emaili juaj" id="email">
+        </div>
 
-    <div class="txtb">
-      <input type="text" name="phone" placeholder="Numri i telefonit tuaj" id="phonenumber">
-    </div>
+        <div class="txtb">
+          <input type="text" name="phone" placeholder="Numri i telefonit tuaj" id="phonenumber">
+        </div>
 
-    <div class="txtb">
-      <textarea id="message" name="message" placeholder="Mesazhi.."></textarea>
-    </div>
-    <div class="btn">
-      <input type="submit" name="submit">
-    </div>
-  </form>
-<?php else :?> 
+        <div class="txtb">
+          <textarea id="message" name="message" placeholder="Mesazhi.."></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" name="submit">
+        </div>
+      </form>
+      <?php else :?>
 
-<<<<<<< HEAD
-    <div class="alertbox">
+      <div class="alertbox">
         <p>Ju lutem, krijoni një llogari në mënyrë që të kontaktoni me ne.</p>
+      </div>
+
+      <?php endif;?>
     </div>
-=======
-	<div class="alertbox">
-		<p>Ju lutem, krijoni një llogari në mënyrë që të kontaktoni me ne.</p>
-	</div>
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
+  </main>
 
-<?php endif;?>
-</div>
-</main>
-
-<?php
+  <?php
 include 'pageIncludes/footer.php';
 ?>
 
-<script src="js/contactus.js"></script>
+  <script src="js/contactus.js"></script>
 
 
 </body>
+
 </html>

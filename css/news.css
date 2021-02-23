@@ -1,6 +1,6 @@
 body.news {
   background: linear-gradient(30deg, rgba(250, 14, 14, 0.172), rgba(243, 114, 9, 0.357)), url("../img/catrun.jpg");
-    background-attachment: fixed !important;
+  background-attachment: fixed !important;
 }
 
 .news .container {
@@ -10,7 +10,7 @@ body.news {
   width: 95%;
   height: 50%;
   max-width: 1200px;
-  position:relative;
+  position: relative;
   float: none;
 }
 
@@ -20,49 +20,49 @@ body.news {
   }
 }
 
-  .card {
-    border-radius: 10px;
-    margin: 10px;
-    position: relative;
-    background-color: #f8e7cbec;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-  }
+.card {
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  background-color: #f8e7cbec;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-  @media (max-width: 480px) {
-    .news .container .card {
-      width: calc((100% - (20px * 1)) / 1);
-    }
+@media (max-width: 480px) {
+  .news .container .card {
+    width: calc((100% - (20px * 1)) / 1);
   }
+}
 
 
-  @media (min-width: 481px) and (max-width: 768px) {
-    .news .container .card {
-      width: calc((100% - (20px * 2)) / 2);
-    }
+@media (min-width: 481px) and (max-width: 768px) {
+  .news .container .card {
+    width: calc((100% - (20px * 2)) / 2);
   }
+}
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .news .container .card {
-      width: calc((100% - (20px * 3)) / 3);
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .news .container .card {
+    width: calc((100% - (20px * 3)) / 3);
   }
+}
 
-  @media (min-width: 1025px) {
-    .news .container .card {
-      width: calc((100% - (20px * 4)) / 4);
-    }
+@media (min-width: 1025px) {
+  .news .container .card {
+    width: calc((100% - (20px * 4)) / 4);
   }
+}
 
-  .card-header img {
-    min-width: 100%;
-    /*height: 200px;*/
-    object-fit: cover;
-    height: 100%;
-  }
+.card-header img {
+  min-width: 100%;
+  /*height: 200px;*/
+  object-fit: cover;
+  height: 100%;
+}
 
 .card-header {
   display: flex;
@@ -75,7 +75,7 @@ body.news {
 
 .card-header .fa-image {
   font-size: 7rem;
-  color: rgba(0,0,0,.2);
+  color: rgba(0, 0, 0, .2);
 }
 
 
@@ -84,10 +84,6 @@ body.news {
   flex-direction: column;
   align-items: start;
   margin-top: 15px;
-<<<<<<< HEAD
-  /*min-height: 250px;*/
-=======
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
 }
 
 .card-body h4 {
@@ -96,15 +92,12 @@ body.news {
 
 .card-body p {
   font-size: 20px;
-<<<<<<< HEAD
-  /*margin: 0 0 40px 0;*/
-=======
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
   font-weight: 500;
   color: rgb(70, 68, 68);
 }
 
-.author, .date {
+.author,
+.date {
   font-size: 1rem;
   color: #a1886a;
   width: 50%;
@@ -141,7 +134,7 @@ body.news {
 
 .user-info h5 {
   margin: 0;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .user-info small {

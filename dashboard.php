@@ -15,23 +15,23 @@ ob_start();
 
 
 	<header class="<?php echo basename(__FILE__, '.php');?>">
-    <?php include 'pageIncludes/header.php';?>
-  </header>
+		<?php include 'pageIncludes/header.php';?>
+	</header>
 
 
 	<main>
 
-	<div class="container">
+		<div class="container">
 
 
-				<div class="main-content">
-					<div class="content-container">
-						<h1>Dashboard</h1>
-						<p>Pjesa e admin-it</p>
-						<p>Këto janë mesazhet e pranuara nga vizituesit e faqes të cilët na kontaktuan!</p>
-					</div>
+			<div class="main-content">
+				<div class="content-container">
+					<h1>Dashboard</h1>
+					<p>Pjesa e admin-it</p>
+					<p>Këto janë mesazhet e pranuara nga vizituesit e faqes të cilët na kontaktuan!</p>
+				</div>
 
-					<div class="table-container">
+				<div class="table-container">
 					<table class="emails">
 						<thead>
 							<tr>
@@ -74,12 +74,12 @@ ob_start();
 						</tfoot>
 					</table>
 
-				</table>
+					</table>
 
-		</div>
+				</div>
 
-	</div>
-</main>
+			</div>
+	</main>
 </body>
 
 </html>

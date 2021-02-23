@@ -16,4 +16,3 @@ if (isset($_POST['login_user'])) {
     $user = new User($email, $password, "none", $db->dbconnection);
     $user->loginUser();
 }
-

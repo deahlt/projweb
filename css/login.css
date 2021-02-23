@@ -1,8 +1,8 @@
 body.login {
-    background: linear-gradient(30deg,
-            rgba(250, 14, 14, 0.5),
-            rgba(243, 208, 9, 0.75)),
-        url('../img/paws.jpg');
+	background: linear-gradient(30deg,
+			rgba(250, 14, 14, 0.5),
+			rgba(243, 208, 9, 0.75)),
+		url('../img/paws.jpg');
 }
 
 
@@ -124,7 +124,7 @@ form input {
 @media (max-width: 768px) {
 
 	.mainContainer {
-			height: 100vh;
+		height: 100vh;
 	}
 
 
@@ -137,7 +137,8 @@ form input {
 	}
 
 
-	.imageBox, .formBox {
+	.imageBox,
+	.formBox {
 		height: 50%;
 		width: 100%;
 	}
@@ -157,7 +158,8 @@ form input {
 	}
 
 
-	.imageBox, .formBox {
+	.imageBox,
+	.formBox {
 		width: 50%;
 		height: 100%;
 	}
@@ -174,22 +176,22 @@ form input {
 }
 
 
-	.mainContainer .signupBox .formBox,
-	.mainContainer.active .signinBox .formBox {
-		left: 100%;
-	}
+.mainContainer .signupBox .formBox,
+.mainContainer.active .signinBox .formBox {
+	left: 100%;
+}
 
-	.mainContainer .signupBox .imageBox,
-	.mainContainer.active .signinBox .imageBox {
-		left: -100%;
-	}
+.mainContainer .signupBox .imageBox,
+.mainContainer.active .signinBox .imageBox {
+	left: -100%;
+}
 
-	.mainContainer.active .signupBox .imageBox,
-	.mainContainer .signinBox .formBox,
-	.mainContainer .signinBox .imageBox,
-	.mainContainer.active .signupBox .formBox  {
-		left: 0;
-	}
+.mainContainer.active .signupBox .imageBox,
+.mainContainer .signinBox .formBox,
+.mainContainer .signinBox .imageBox,
+.mainContainer.active .signupBox .formBox {
+	left: 0;
+}
 
 
 #warning-confirm,
@@ -198,8 +200,7 @@ form input {
 #warning-name-short,
 #warning-name-long,
 #warning-name-error,
-#warning-error
- {
+#warning-error {
 	color: rgb(230, 0, 0);
 	background-color: none;
 	font-size: 12px;

@@ -34,11 +34,7 @@ while ($row = mysqli_fetch_assoc($grab_animals_query)) {
 
     echo     "<div class='card-body'>";
     echo          "<p>";
-<<<<<<< HEAD
     echo                "$animal_name is a $animal_age year old $animal_species";
-=======
-    echo                "$animal_name , a $animal_species, with the age of $animal_age years old";
->>>>>>> f561b1b38a41e9ba243c3930f22c8dbbb5412114
     echo         "</p>";
 
         echo        "<div class='user'>";
