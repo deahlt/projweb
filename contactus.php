@@ -50,8 +50,7 @@ ob_start();
   ?>
 
 
-
-      <form action="contactus.php" method="POST" id="myform" onsubmit="return validation()">
+      <form action="contactus.php" method="POST" id="myform" onsubmit="return validation(form)">
         <div class="txtb">
           <input type="text" name="name" placeholder="Emri juaj i plotë" id="name">
         </div>
